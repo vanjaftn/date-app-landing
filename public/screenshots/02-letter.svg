@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" width="320" height="660" role="img" aria-label="App screenshot placeholder  letter screen">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5E6D3"/>
+      <stop offset="100%" stop-color="#EDD9C2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="320" height="660" fill="url(#bg2)"/>
+
+  <!-- status bar -->
+  <text x="24" y="34" font-family="ui-sans-serif, system-ui" font-size="13" font-weight="600" fill="#3D2E1F">9:41</text>
+  <rect x="284" y="26" width="18" height="8" rx="2" fill="none" stroke="#3D2E1F" stroke-width="1.2"/>
+
+  <!-- back arrow -->
+  <path d="M28 78 L20 86 L28 94" fill="none" stroke="#3D2E1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- title -->
+  <text x="160" y="92" text-anchor="middle" font-family="ui-serif, Georgia" font-size="18" font-style="italic" fill="#3D2E1F">your date idea</text>
+
+  <!-- letter card -->
+  <g transform="translate(28 130)">
+    <rect x="0" y="0" width="264" height="340" rx="14" fill="#FFFFFF" stroke="#D9C7AE" stroke-width="1.5"/>
+    <!-- ruled lines mimicking handwriting -->
+    <text x="132" y="60" text-anchor="middle" font-family="ui-serif, Georgia" font-size="20" font-style="italic" fill="#3D2E1F">stargaze &amp; snacks</text>
+
+    <line x1="24" y1="100" x2="240" y2="100" stroke="#EDD9C2" stroke-width="1"/>
+    <line x1="24" y1="124" x2="240" y2="124" stroke="#EDD9C2" stroke-width="1"/>
+    <line x1="24" y1="148" x2="200" y2="148" stroke="#EDD9C2" stroke-width="1"/>
+    <line x1="24" y1="172" x2="240" y2="172" stroke="#EDD9C2" stroke-width="1"/>
+    <line x1="24" y1="196" x2="180" y2="196" stroke="#EDD9C2" stroke-width="1"/>
+
+    <text x="24" y="96"  font-family="ui-sans-serif" font-size="11" fill="#6B5440">grab a blanket, your favourite snacks,</text>
+    <text x="24" y="120" font-family="ui-sans-serif" font-size="11" fill="#6B5440">and head outside after sunset.</text>
+    <text x="24" y="144" font-family="ui-sans-serif" font-size="11" fill="#6B5440">no phones  just stars.</text>
+
+    <!-- little heart -->
+    <path transform="translate(132 240) scale(1.6)" d="M0 4 C -6 -1, -10 -7, -5 -10 C -1 -13, 0 -7, 0 -5 C 0 -7, 1 -13, 5 -10 C 10 -7, 6 -1, 0 4 Z" fill="#B07A4A"/>
+
+    <text x="132" y="290" text-anchor="middle" font-family="ui-serif, Georgia" font-size="11" font-style="italic" fill="#6B5440"> with love</text>
+  </g>
+
+  <!-- Done button -->
+  <rect x="40" y="510" width="240" height="54" rx="27" fill="#3D2E1F"/>
+  <text x="160" y="544" text-anchor="middle" font-family="ui-sans-serif" font-size="14" font-weight="600" fill="#F5E6D3">Done</text>
+
+  <!-- bottom nav -->
+  <rect x="20" y="592" width="280" height="48" rx="24" fill="#FFFFFF" stroke="#D9C7AE" stroke-width="1.5"/>
+  <circle cx="70"  cy="616" r="5" fill="#D9C7AE"/>
+  <circle cx="160" cy="616" r="5" fill="#B07A4A"/>
+  <circle cx="250" cy="616" r="5" fill="#D9C7AE"/>
+</svg>

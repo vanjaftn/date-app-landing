@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 660" width="320" height="660" role="img" aria-label="App screenshot placeholder  dates list screen">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5E6D3"/>
+      <stop offset="100%" stop-color="#EDD9C2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="320" height="660" fill="url(#bg3)"/>
+
+  <!-- status bar -->
+  <text x="24" y="34" font-family="ui-sans-serif, system-ui" font-size="13" font-weight="600" fill="#3D2E1F">9:41</text>
+  <rect x="284" y="26" width="18" height="8" rx="2" fill="none" stroke="#3D2E1F" stroke-width="1.2"/>
+
+  <!-- title -->
+  <text x="24" y="86" font-family="ui-serif, Georgia" font-size="22" font-weight="600" fill="#3D2E1F">your dates</text>
+  <text x="24" y="106" font-family="ui-sans-serif" font-size="12" fill="#6B5440">3 of 12 opened</text>
+
+  <!-- progress bar -->
+  <rect x="24" y="120" width="272" height="6" rx="3" fill="#EDD9C2"/>
+  <rect x="24" y="120" width="68"  height="6" rx="3" fill="#B07A4A"/>
+
+  <!-- list items -->
+  <g font-family="ui-sans-serif, system-ui">
+    <!-- opened 1 -->
+    <g transform="translate(24 152)">
+      <rect width="272" height="64" rx="12" fill="#FFFFFF" stroke="#D9C7AE" stroke-width="1.2"/>
+      <g transform="translate(20 22)">
+        <rect width="22" height="16" rx="2" fill="#EDD9C2" stroke="#B07A4A" stroke-width="1.2"/>
+        <polyline points="0,0 11,9 22,0" fill="none" stroke="#B07A4A" stroke-width="1.2"/>
+      </g>
+      <text x="60" y="32" font-size="13" font-weight="600" fill="#3D2E1F">picnic in the park</text>
+      <text x="60" y="50" font-size="11" fill="#6B5440">opened · march 14</text>
+    </g>
+    <!-- opened 2 -->
+    <g transform="translate(24 224)">
+      <rect width="272" height="64" rx="12" fill="#FFFFFF" stroke="#D9C7AE" stroke-width="1.2"/>
+      <g transform="translate(20 22)">
+        <rect width="22" height="16" rx="2" fill="#EDD9C2" stroke="#B07A4A" stroke-width="1.2"/>
+        <polyline points="0,0 11,9 22,0" fill="none" stroke="#B07A4A" stroke-width="1.2"/>
+      </g>
+      <text x="60" y="32" font-size="13" font-weight="600" fill="#3D2E1F">sunset bike ride</text>
+      <text x="60" y="50" font-size="11" fill="#6B5440">opened · march 22</text>
+    </g>
+    <!-- opened 3 -->
+    <g transform="translate(24 296)">
+      <rect width="272" height="64" rx="12" fill="#FFFFFF" stroke="#D9C7AE" stroke-width="1.2"/>
+      <g transform="translate(20 22)">
+        <rect width="22" height="16" rx="2" fill="#EDD9C2" stroke="#B07A4A" stroke-width="1.2"/>
+        <polyline points="0,0 11,9 22,0" fill="none" stroke="#B07A4A" stroke-width="1.2"/>
+      </g>
+      <text x="60" y="32" font-size="13" font-weight="600" fill="#3D2E1F">stargaze &amp; snacks</text>
+      <text x="60" y="50" font-size="11" fill="#6B5440">opened · today</text>
+    </g>
+    <!-- locked 1 -->
+    <g transform="translate(24 368)" opacity="0.85">
+      <rect width="272" height="64" rx="12" fill="#EDD9C2" stroke="#D9C7AE" stroke-width="1.2"/>
+      <g transform="translate(20 20)">
+        <rect x="2" y="6" width="14" height="12" rx="2" fill="none" stroke="#6B5440" stroke-width="1.4"/>
+        <path d="M5 6 V3 a4 4 0 0 1 8 0 V6" fill="none" stroke="#6B5440" stroke-width="1.4"/>
+      </g>
+      <text x="60" y="32" font-size="13" font-weight="600" fill="#6B5440">locked</text>
+      <text x="60" y="50" font-size="11" fill="#6B5440">finish the previous date to unlock</text>
+    </g>
+    <!-- locked 2 -->
+    <g transform="translate(24 440)" opacity="0.6">
+      <rect width="272" height="64" rx="12" fill="#EDD9C2" stroke="#D9C7AE" stroke-width="1.2"/>
+      <g transform="translate(20 20)">
+        <rect x="2" y="6" width="14" height="12" rx="2" fill="none" stroke="#6B5440" stroke-width="1.4"/>
+        <path d="M5 6 V3 a4 4 0 0 1 8 0 V6" fill="none" stroke="#6B5440" stroke-width="1.4"/>
+      </g>
+      <text x="60" y="32" font-size="13" font-weight="600" fill="#6B5440">locked</text>
+    </g>
+    <!-- locked 3 -->
+    <g transform="translate(24 512)" opacity="0.4">
+      <rect width="272" height="64" rx="12" fill="#EDD9C2" stroke="#D9C7AE" stroke-width="1.2"/>
+      <g transform="translate(20 20)">
+        <rect x="2" y="6" width="14" height="12" rx="2" fill="none" stroke="#6B5440" stroke-width="1.4"/>
+        <path d="M5 6 V3 a4 4 0 0 1 8 0 V6" fill="none" stroke="#6B5440" stroke-width="1.4"/>
+      </g>
+      <text x="60" y="32" font-size="13" font-weight="600" fill="#6B5440">locked</text>
+    </g>
+  </g>
+
+  <!-- bottom nav -->
+  <rect x="20" y="592" width="280" height="48" rx="24" fill="#FFFFFF" stroke="#D9C7AE" stroke-width="1.5"/>
+  <circle cx="70"  cy="616" r="5" fill="#D9C7AE"/>
+  <circle cx="160" cy="616" r="5" fill="#D9C7AE"/>
+  <circle cx="250" cy="616" r="5" fill="#B07A4A"/>
+</svg>
