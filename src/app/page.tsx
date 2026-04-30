@@ -245,13 +245,13 @@ function SiteFooter() {
             © {new Date().getFullYear()}
           </span>
         </div>
-        <nav className="flex items-center gap-6 text-sm text-ink-soft">
+        {/* <nav className="flex items-center gap-6 text-sm text-ink-soft">
           <a href="#" className="hover:text-ink">Privacy</a>
           <a href="#" className="hover:text-ink">Terms</a>
           <a href="mailto:hello@example.com" className="hover:text-ink">
             Contact
           </a>
-        </nav>
+        </nav> */}
       </div>
     </footer>
   );
