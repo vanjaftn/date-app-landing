@@ -16,7 +16,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Lovenote — Date ideas, one envelope at a time",
+  title: "Sealed With Love — Date ideas, one envelope at a time",
   description:
     "A playful mobile app that turns date night into a little adventure. Open an envelope, get a date idea, and check it off your list.",
 };

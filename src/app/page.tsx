@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const APP_NAME = "Seled With Love";
+const APP_NAME = "Sealed With Love";
 const PLAY_STORE_URL = "#"; // TODO: replace with the real Play Store URL once published
 
 export default function Home() {
@@ -49,7 +49,7 @@ function Hero() {
         <div className="lg:col-span-7">
           <span className="inline-flex items-center gap-2 rounded-full bg-cream-100 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink-soft">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            now on Google Play
+            soon on Google Play
           </span>
 
           <h1 className="mt-6 font-display text-5xl leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
@@ -81,7 +81,7 @@ function Hero() {
             <DecorSparkle className="absolute -bottom-6 -left-6 h-8 w-8 animate-float-medium [--tilt:0deg]" />
 
             <PhoneFrame
-              src="/screenshots/01-envelope.svg"
+              src="/screenshots/date_idea_app_list_screen_with_rating.jpg"
               alt={`${APP_NAME} app — envelope screen`}
               priority
             />
@@ -105,9 +105,9 @@ function HowItWorks() {
       icon: <EnvelopeMark className="h-7 w-7" />,
     },
     {
-      title: "Mark it done",
-      body: "Live the date, hit Done, and a fresh envelope is waiting for next time.",
-      icon: <CheckIcon className="h-7 w-7" />,
+      title: "Rate the night",
+      body: "Give the night a quick rating — a small pause to savour it before the next envelope arrives.",
+      icon: <StarIcon className="h-7 w-7" />,
     },
   ];
 
@@ -169,10 +169,10 @@ function Showcase() {
           </p>
         </div>
 
-        <div className="mt-14 grid items-end gap-10 sm:grid-cols-3">
-          <div className="order-2 sm:order-1">
+        <div className="mt-14 grid grid-cols-2 items-end gap-x-6 gap-y-12 lg:grid-cols-4 lg:gap-8">
+          <div>
             <PhoneFrame
-              src="/screenshots/03-list.svg"
+              src="/screenshots/date_idea_app_choose_your_deck.jpg"
               alt={`${APP_NAME} app — your dates list`}
               compact
             />
@@ -181,19 +181,20 @@ function Showcase() {
             </p>
           </div>
 
-          <div className="order-1 sm:order-2 sm:-mt-10">
+          <div>
             <PhoneFrame
-              src="/screenshots/01-envelope.svg"
+              src="/screenshots/date_idea_app_envelope.jpg"
               alt={`${APP_NAME} app — envelope screen`}
+              featured
             />
             <p className="mt-4 text-center text-sm text-ink-soft">
               An envelope waiting for you
             </p>
           </div>
 
-          <div className="order-3">
+          <div>
             <PhoneFrame
-              src="/screenshots/02-letter.svg"
+              src="/screenshots/date_idea_app_letter.jpg"
               alt={`${APP_NAME} app — letter screen`}
               compact
             />
@@ -201,6 +202,18 @@ function Showcase() {
               A handwritten date idea
             </p>
           </div>
+
+          <div>
+            <PhoneFrame
+              src="/screenshots/date_idea_app_rate.jpg"
+              alt={`${APP_NAME} app — your deck`}
+              compact
+            />
+            <p className="mt-4 text-center text-sm text-ink-soft">
+              Create a memory
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -264,13 +277,19 @@ function PhoneFrame({
   alt,
   priority,
   compact,
+  featured,
 }: {
   src: string;
   alt: string;
   priority?: boolean;
   compact?: boolean;
+  featured?: boolean;
 }) {
-  const widthClass = compact ? "max-w-[220px]" : "max-w-[280px]";
+  const widthClass = featured
+    ? "max-w-[360px]"
+    : compact
+      ? "max-w-[220px]"
+      : "max-w-[280px]";
 
   return (
     <div className={`relative mx-auto ${widthClass}`}>
@@ -386,6 +405,20 @@ function DeckIcon({ className = "" }: { className?: string }) {
       <path
         d="M13 7.5c-1 0-1.7.7-1.7 1.6 0 1.6 2 2.7 2 2.7s2-1.1 2-2.7c0-.9-.7-1.6-1.7-1.6-.3 0-.6.2-.8.4-.2-.2-.5-.4-.8-.4Z"
         fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+function StarIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+      <path
+        d="M12 3.5l2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.9-5.4 2.9 1-6L3.2 9.9l6.1-.9L12 3.5Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        fill="currentColor"
+        fillOpacity="0.06"
       />
     </svg>
   );
