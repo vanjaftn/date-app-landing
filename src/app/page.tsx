@@ -81,7 +81,7 @@ function Hero() {
             <DecorSparkle className="absolute -bottom-6 -left-6 h-8 w-8 animate-float-medium [--tilt:0deg]" />
 
             <PhoneFrame
-              src="/screenshots/date_idea_app_list_screen_with_rating.jpg"
+              src="/screenshots/date_idea_app_list_screen_new.jpg"
               alt={`${APP_NAME} app — envelope screen`}
               priority
             />
@@ -194,7 +194,7 @@ function Showcase() {
 
           <div>
             <PhoneFrame
-              src="/screenshots/date_idea_app_letter.jpg"
+              src="/screenshots/date_idea_app_letter_new.jpg"
               alt={`${APP_NAME} app — letter screen`}
               compact
             />
@@ -258,13 +258,11 @@ function SiteFooter() {
             © {new Date().getFullYear()}
           </span>
         </div>
-        {/* <nav className="flex items-center gap-6 text-sm text-ink-soft">
-          <a href="#" className="hover:text-ink">Privacy</a>
-          <a href="#" className="hover:text-ink">Terms</a>
-          <a href="mailto:hello@example.com" className="hover:text-ink">
-            Contact
+        <nav className="flex items-center gap-6 text-sm text-ink-soft">
+          <a href="/privacy-policy" className="hover:text-ink">
+            Privacy Policy
           </a>
-        </nav> */}
+        </nav>
       </div>
     </footer>
   );
